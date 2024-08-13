@@ -2,32 +2,210 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* .sectionGap{
+    padding: 0 3.33%;
+} */
+
+.navbars {
+ 
+  border-spacing: 1px;
+  
+  background-color: #0d74b7;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.image {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link li a:hover{
+    color:darkgoldenrod ;
+    transition: all 0.4s;
+}
+.nav-link{
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 0px;
+   bottom: 5%;
+    transition: all 0.4s;
+}
+.nav-link:hover::after{
+    scale: 1;
+}
+
+.contact{
+    display: flex;
+    flex-direction: row;
+    
+    border-bottom: 1px solid black;
+    align-items: center     ;
+   
+}
+
+.cusContainer{
+    padding-left: 3.33%;
+    padding-right: 3.33%;
+}
+
+/* .button{
+    display: flex;
+    justify-content: right;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    
+} */
+
+.Book_btn{
+    background-color: #25398f;
+    color: white;   
+    font-weight: 700; 
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.readmore_btn{
+    background-color: blue;
+    color: whitesmoke;
+    font-weight: 600;
+    border-radius: 15px;
+  
+}
+
+.title_text{
+    color: white;
+    font-style: oblique;
+    font-weight: 500;
+    font-size: xx-large;
+}
+.subtitle{
+    color: whitesmoke;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.firstLocation {
+    border-right: 2px solid rgba(96, 96, 141, 0.318);
+    color: #0D74B7;
+   padding-right: -2%;
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .secondLocation {
+    color: #0D74B7;
+    padding-left: 5%;
   }
-}
+  .location{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 40%;
+    
+  }
+  .homevoucher{
+    display: flex;
+    border-radius: 20px;
+    justify-content: space-between;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    
+  }
+
+  .homeOffer{
+    display: flex;
+    border-radius: 20px;
+    border-radius: 45px;
+    margin-left: 2%;
+    margin-right: 2%;
+    overflow: hidden;
+    background-color: #00AEEA;
+  
+    
+  }
+  
+  .homeOffer .hv1{
+    width: 33.33%;
+    
+    background: #00aeea;
+    
+    
+    border-right: 2px solid white;
+    padding: 22px 0px;
+    margin: 16px 0;
+    
+   
+  }
+
+  .homeOffer .hv2{
+    width: 33.33%;
+ background: #00aeea;
+ position: relative;
+  }
+  
+  .homeOffer .hv3{
+    width: 33.33%;
+    background-color: #0D74B7;
+    
+  }
+
+  .rotate {
+    transform: rotate(133deg);
+    width: 46px;
+    height: 46px;
+    visibility: visible;
+    position: absolute;
+    right: -20px;
+    top: 41px;
+    border-radius: 9%;
+    background-color: #00AEEA;
+    color: white;
+
+  }
+  
+  .logoDiv{
+    width: 33%;
+    padding-left: 7%;
+  }
+
+  .buttonDiv{
+    width: 33%;
+    padding-left: 13%;
+  }
+
+  .HomeFeatures{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .getvoucher_btn {
+    background-color: transparent; /* Transparent background */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Padding inside the button */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold text */
+    border: 2px dotted white; /* Dotted white border */
+    border-radius: 12px; /* Rounded corners */
+    width: 200px; /* Adjust width as needed */
+    height: 50px; /* Adjust height as needed */
+    text-align: center; /* Center text */
+    text-transform: uppercase; /* Uppercase text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
+    margin-top: 2%;
+  }
+
+  .review_btn{
+    background-color: #25398f;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid ;
+    cursor: pointer;
+    border-radius: 20px;
+  }
